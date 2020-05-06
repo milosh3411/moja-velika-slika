@@ -1,0 +1,26 @@
+{
+    "deploy.reloaded": {
+        "packages": [
+            {
+                "name": "moja-velika-slika",
+                
+                "deployOnSave": true,
+
+                "files": [
+                    "/*.js"
+                ],
+
+                "targets": [ "My S3 bucket" ]
+            }
+        ],
+
+        "targets": [        
+            {
+                "type": "s3bucket",
+                "name": "My S3 bucket",
+
+                "bucket": "moja-velika-slika"
+            }
+        ]
+    }
+}
